@@ -144,6 +144,11 @@ export default {
     tbody() {
       return this.datePicker.dates;
     }
+  },
+  watch: {
+    defaultTime(nValue) {
+      this.selectedDate = nValue;
+    }
   }
 };
 </script>

@@ -1,6 +1,6 @@
 <template>
   <div id="app">
-      <ICalendar :formatYMD="'YYYY/MM/DD'" @onSelect="getData"></ICalendar>
+      <ICalendar :formatYMD="'YYYY/MM/DD'" @onSelect="getData" :defaultTime="'2020/02/01'"></ICalendar>
   </div>
 </template>
 
@@ -18,7 +18,7 @@ export default {
   },
   methods: {
       getData(val) {
-          console.log(val);
+          this.data = val;
       }
   },
 }
